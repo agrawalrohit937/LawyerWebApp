@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Home - Law Firm{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Expert Legal Representation</h1>
+        <p>Trusted lawyers providing quality legal services for over 25 years</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('appointment') }}" class="btn btn-primary">Book Consultation</a>
+            <a href="{{ url_for('contact') }}" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+    <div class="container">
+        <div class="stat-grid">
+            <div class="stat-item">
+                <i class="fas fa-gavel"></i>
+                <h3>1000+</h3>
+                <p>Cases Won</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h3>2500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-trophy"></i>
+                <h3>50+</h3>
+                <p>Awards</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-user-tie"></i>
+                <h3>25+</h3>
+                <p>Attorneys</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+    <div class="container">
+        <h2>Our Practice Areas</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Corporate Law</h3>
+                <p>Expert guidance for businesses of all sizes</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-home"></i>
+                <h3>Family Law</h3>
+                <p>Compassionate support during difficult times</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Criminal Defense</h3>
+                <p>Strong defense for your rights</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-key"></i>
+                <h3>Real Estate</h3>
+                <p>Protecting your property interests</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose">
+    <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <i class="fas fa-medal"></i>
+                <h3>25+ Years Experience</h3>
+                <p>Proven track record of success</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-handshake"></i>
+                <h3>Client First</h3>
+                <p>Your success is our priority</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Available</h3>
+                <p>Always here when you need us</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Schedule your free consultation today</p>
+        <a href="{{ url_for('appointment') }}" class="btn btn-white">Book Appointment</a>
+    </div>
+</section>
+
+{% endblock %}
